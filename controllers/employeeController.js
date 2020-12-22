@@ -25,9 +25,9 @@ exports.getEmployees = (req, res, next) => {
     const mobile = req.body.mobile;
     const employee = new Employee(fullname, email, city, mobile);
     employee
-      .save()
-      .then(() => {
+    .save()
+    .then(() => {
         res.redirect('employee/list');
       })
-      .catch(err => console.log(err));
+    .catch(err => console.log(err));
   };
