@@ -12,7 +12,7 @@ exports.getEmployees = (req, res, next) => {
       .then(([rows, fieldData]) => {
         res.render('employee/list', {
           list: rows,
-          viewTitle: "Insert Employee",
+          viewTitle: "Fetched the List of Employees",
          });
       })
       .catch(err => console.log(err));
