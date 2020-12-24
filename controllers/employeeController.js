@@ -4,7 +4,7 @@ const Employee = require('../models/employee.model');
 
 exports.getAddEmployee = (req, res, next) => {
     res.render("employee/addOrEdit", {
-        viewTitle: "Insert Employee"
+        viewTitle: "Insert Employee Details"
     });
   };
 exports.getEmployees = (req, res, next) => {
